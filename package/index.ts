@@ -1,3 +1,9 @@
+/*!
+ * HandlebarsConverter
+ * Copyright(c) 2023 Tobi Ajibade
+ * MIT Licensed
+ */
+
 import * as fs from "fs/promises";
 import * as path from "path";
 import * as handlebars from "handlebars";
@@ -13,11 +19,6 @@ type TemplateGenerationOptions = {
   templateName: string,
   context?: object,
 }
-/*!
- * HandlebarsConverter
- * Copyright(c) 2023 Tobi Ajibade
- * MIT Licensed
- */
 
 /**
  * @class 
