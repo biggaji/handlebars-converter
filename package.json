@@ -1,7 +1,8 @@
 {
   "name": "handlebars-converter",
-  "version": "1.0.1",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": "git@github.com:biggaji/handlebars-converter.git",
   "author": "Tobi Ajibade <tobiajibade2017@yandex.com>",
   "license": "MIT",
