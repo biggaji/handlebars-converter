@@ -55,10 +55,10 @@ const templateConverter = new HandlebarsConverter({
 Use the `compile()` method available on the templateConverter class instance created earlier to generate an html output, it returns a promise so we need to use await keyword.
 
 ```js
-const generatedHtml = await templateConverter.compileToHtml({
+const generatedHtml = await templateConverter.compile({
   templateName: "filename",
 
-  //any data you want to pass into the template(s) 
+  // any data you want to pass into the template(s)
   context: {},
 });
 ```
@@ -132,7 +132,7 @@ const templateConverter = new HandlebarsConverter({
 });
 
 async function generateHtml(filename) {
-  const generatedHtml = await templateConverter.compileToHtml({
+  const generatedHtml = await templateConverter.compile({
     templateName: filename,
 
     //any data you want to pass into the template(s)
@@ -145,7 +145,7 @@ async function generateHtml(filename) {
   return generatedHtml; 
 }
 
-//would return a compile html code with all the template data inserted
+// would return a compiled html code with all the template data injected
 generateHtml("index"); 
 ```
 
